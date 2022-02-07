@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   animation: slideY 1.5s;
+
 }
 
 @keyframes slideY {
@@ -36,7 +37,7 @@
 }
 
 .modal-link {
-  background-color: #172742;
+  background-color: #0c1a22;
   display: flex;
   align-items: center;
   justify-content: space-between;

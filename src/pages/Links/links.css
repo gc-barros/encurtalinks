@@ -6,6 +6,7 @@
 .links-header {
   display: flex;
   flex-direction: row;
+  margin-bottom: 3rem;
 }
 
 .links-header svg {
@@ -21,7 +22,7 @@
   display: flex;
   align-items: center;
   flex-direction: row;
-  margin-top: 8px;
+  margin-top: 1rem;
 }
 
 .links-item:last-child {
@@ -60,7 +61,18 @@
   width: 100%;
   text-align: center;
   color: #FFF;
-  margin-top: 28px;
+  margin-top: 24px;
+  font-weight: 300;
+}
+
+.ilustra {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.ilustra svg {
+  max-width: 400px;
+  margin: auto;
 }
 
 @media screen and (max-width: 715px) {

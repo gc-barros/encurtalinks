@@ -18,7 +18,11 @@
   color: #FFF;
 }
 
-.logo span {
+.logo h1 > span {
+  color: #5debf0;
+}
+
+.logo .descricao {
   color: #FFF;
   margin-top: 14px;
   margin-bottom: 34px;
@@ -65,10 +69,12 @@
   color: #FFF;
   outline: none;
   font-size: 18px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .area-input input::placeholder {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.541);
+  font-weight: 300;
 }
 
 .area-input button {
@@ -81,10 +87,16 @@
   font-weight: bold;
   margin-top: 8px;
   transition: transform 0.7s;
+  font-family: 'Roboto', sans-serif;
+  background-color: #5debf0;
 }
 
 .area-input button:hover {
   transform: scale(1.05);
+}
+
+.logo svg {
+  max-height: 300px;
 }
 
 @media screen and (max-width: 615px) {
@@ -96,7 +108,7 @@
     font-size: 40px;
   }
 
-  .logo span {
+  .logo .descricao {
     font-size: 16px;
   }
 
@@ -104,4 +116,5 @@
     width: 85%;
   }
 }
+
 

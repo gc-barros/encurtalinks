@@ -6,6 +6,9 @@ import { Link } from 'react-router-dom';
 import { getLinksSave, deleteLink } from '../../services/storeLinks';
 import LinkItem from '../../components/LinkItem';
 
+import Lottie from "react-lottie";
+import makingRobot from "../../lotties/making-robot.json";
+
 export default function Links() {
 
   const [myLinks, setMyLinks] = useState([]);
@@ -50,21 +53,21 @@ export default function Links() {
     <div className="links-container">
       <div className="links-header">
         <Link to="/">
-          <FiArrowLeft size={38} color="#FFF" />
+          <FiArrowLeft size={38} color="#5DEBF0" />
         </Link>
         <h1>Meus Links</h1>
       </div>
 
       {emptyList && (
         <div className="links-item">
-          <h2 className="empty-text">Sua lista está vazia.</h2>
+          <h2 className="empty-text">Você ainda não possui links salvos.</h2>
         </div>
       )}
 
       {myLinks.map((link) => (
         <div key={link.id} className="links-item">
           <button className="link" onClick={() => handleOpenLink(link)}>
-            <FiLink size={18} color="#FFF" />
+            <FiLink size={18} color="#5DEBF0" />
             {link.long_url}
           </button>
           <button className="link-delete" onClick={() => handleDelete(link.id)}>
@@ -73,13 +76,22 @@ export default function Links() {
         </div>
       ))}
 
-      {showModal && (
-        <LinkItem
-          closeModal={() => setShowModal(false)}
-          content={data}
+      <div className="ilustra">
+        <Lottie
+          options={{
+            loop: true,
+            autoplay: true,
+            animationData: makingRobot,
+            rendererSettings: {
+              preserveAspectRatio: "xMidYMid slice",
+            },
+          }}
         />
-      )}
+      </div>
 
+      {showModal && (
+        <LinkItem closeModal={() => setShowModal(false)} content={data} />
+      )}
     </div>
   );
 }

@@ -5,13 +5,13 @@ export default function LinkItem({ closeModal, content }) {
 
   async function copyLink() {
     await navigator.clipboard.writeText(content.link);
-    alert("Link copiado com sucesso! 😸")
+    alert("Link copiado com sucesso! 🤖")
   }
 
   return (
     <div className="modal-container">
       <div className="modal-header">
-        <h2>Link encurtado</h2>
+        <h2>Aqui está seu link encurtado:</h2>
         <button onClick={closeModal}>
           <FiX size={28} color="#000" />
         </button>

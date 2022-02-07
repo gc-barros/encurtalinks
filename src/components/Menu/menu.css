@@ -11,15 +11,20 @@
 }
 
 .social {
-  margin-right: 14px;
+  margin-right: 24px;
   display: flex;
   align-items: center;
 }
 
 .menu-item {
   color: #000;
-  background-color: #FFF;
-  padding: 12px 24px;
+  background-color: #5debf0;
+  padding: 12px 40px;
   border-radius: 4px;
   margin-right: 14px;
+  transition: .5s ease all;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
 }
