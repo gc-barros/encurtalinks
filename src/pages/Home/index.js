@@ -57,7 +57,7 @@ export default function Home() {
           <FiLink size={24} color="#FFF" />
           <input
             type="text"
-            placeholder="http://www.exemplo.com/"
+            placeholder="https://www.exemplo.com/"
             value={link}
             onChange={(e) => setLink(e.target.value)}
           />
