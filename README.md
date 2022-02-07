@@ -1,4 +1,4 @@
-# 🔗 Encurtalinks 💻
+# 🔗 Encurtalinks 🤖
 💻 <em>Projeto desenvolvido durante a Semana React JS, realizada pelo <a href="https://www.instagram.com/sujeitoprogramador/" target="_blank">Sujeito Programador</a>.</em>
 
 #### 🔗 Confira em: https://encurtalinks.vercel.app/
