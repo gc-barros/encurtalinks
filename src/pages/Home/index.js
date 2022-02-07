@@ -29,7 +29,7 @@ export default function Home() {
       setLink("");
 
     } catch {
-      alert("Ops, parece que algo deu errado! 🤖")
+      alert("Oops, link inválido! 🤖")
       setLink('');
     }
   }
@@ -57,7 +57,7 @@ export default function Home() {
           <FiLink size={24} color="#FFF" />
           <input
             type="text"
-            placeholder="https://www.exemplo.com/"
+            placeholder="http://www.exemplo.com/"
             value={link}
             onChange={(e) => setLink(e.target.value)}
           />
